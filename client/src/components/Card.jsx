@@ -1,7 +1,7 @@
 /* A reusable card component */
 export default function Card({ title, endpoint }) {
   const handleClick = () => {
-    window.open(`http://localhost:5000${endpoint}`, "_blank");
+    window.open(`https://my-dummy-api-a13y.vercel.app/${endpoint}`, "_blank");
   };
 
   return (
