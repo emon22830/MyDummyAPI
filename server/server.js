@@ -18,6 +18,14 @@ app.use("/posts", postsRoute);
 app.use("/comments", commentsRoute);
 app.use("/todos", todosRoute);
 
+
+app.get('/', (req, res) =>{
+  res.send({
+    activeStatus:true,
+    error:false,
+  })
+})
+
 app.listen(PORT, () => {
   console.log(`🚀 MyDummyAPI running at http://localhost:${PORT}`);
 });
